@@ -12,8 +12,6 @@ import org.elasticsearch.rest.RestModule;
  */
 public class RollingIndexPlugin extends AbstractPlugin {
 
-    protected final ESLogger logger = Loggers.getLogger(RollingIndexPlugin.class);
-
     @Override public String name() {
         return "rollindex";
     }

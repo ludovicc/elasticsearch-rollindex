@@ -25,6 +25,7 @@ public class RollScheduler {
     private RollScheduler() {
         try {
             scheduler = new StdSchedulerFactory().getScheduler();
+            scheduler.start();
         } catch (SchedulerException e) {
             throw new RuntimeException(e);
         }
